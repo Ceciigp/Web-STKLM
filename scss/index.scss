@@ -67,7 +67,7 @@ body{
         margin: auto;
         
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
         align-content: initial;
@@ -81,6 +81,7 @@ body{
             font-weight: 800;
             letter-spacing: .15em;
             color: var(--negro);
+            
         }
         
         .menu{
@@ -654,31 +655,87 @@ body{
         padding: 2em 0;
         .centrado{
             display: flex;
-            flex-flow: row-reverse;
+            flex-flow: row-reverse wrap;
             justify-content: space-between;
+            
 
             .h1{
                 margin:auto;
             }
-            .menu{
-                display: none;
-            }
+
             .fa-bars{
                 margin: 0 20px;
-                display: inline-block;
+                display: flex;
                 font-size: 1em;
                 color: var(--negro);
                 cursor: pointer;
 
                 &:hover{
                     color: var( --amarillo);
+                }  
+            }
+
+            .menu{
+                display: none;
+                width: 100%;
+
+                .ul{
+                    
+                    flex-direction: column;
+                    align-content: flex-start;
+
+                    .li{
+                        width: 100%;
+                        margin: 8px 0 0 5px;
+                        
+
+                        .a{
+                            margin-top: 12px;
+                            text-transform: none;
+                            font-weight: 500;
+                            font-size: .9em;
+                            color: #8d8d8d;
+                            
+                        }
+                        .ahome{
+                            margin: 12px 0 0 0;
+                            text-transform: none;
+                            font-weight: 500;
+                            font-size: .9em;                    
+                        }
+                        
+                    }
+                    
+                    
+                    
+                    .item1{
+                        padding: 0px;
+                        border-top: 1px solid rgb(218, 210, 210);
+                        .ul2{display: none;}
+                    }
+                    .item2{
+                        padding: 0px;
+                        border-top: 1px solid rgb(218, 210, 210);
+                        .ul3{display: none;}
+                    }
+                    .item3{
+                        padding: 0px;
+                        border-top: 1px solid rgb(218, 210, 210);
+                        .ul4{display: none;}
+                    }
+                    .item4{
+                        padding: 0px;
+                        border-top: 1px solid rgb(218, 210, 210);
+                        .ul5{display: none;}
+                    }
                 }
                 
             }
-        }
+            .menu.ver{
+                display: flex;
+            }
+        }     
     }
-    
-    
 }
 
 @media screen and (max-width:760px){
