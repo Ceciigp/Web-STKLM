@@ -614,10 +614,26 @@ body {
   .header .centrado .menu.ver {
     display: flex;
   }
+
+  .main .producto .centrado{
+    width: 95%;
+    padding: 0px;
+  }
+  .main .producto .centrado .columna .h2{
+    font-size: 1.5em;
+  }
+  .producto .centrado .columna{
+    width: calc( 100% / 2 );
+    min-width: 15em;
+    margin: 1em 0;
+
+  }
 }
+
 @media screen and (max-width: 760px) {
+
   .main .producto .centrado {
-    padding: 120px 0;
+    padding: 10em 0;
     flex-flow: column wrap;
     transition: all 0.5s ease;
   }

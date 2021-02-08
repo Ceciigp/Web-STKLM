@@ -622,7 +622,6 @@ body{
                     justify-content: center;
                     align-items: center;
                     align-content: initial;
-                    /* font-size: 1.2em; */
                     color: rgb(57, 57, 57);
                 
                     transition: all .5s ease; 
@@ -736,7 +735,21 @@ body{
             }
         }     
     }
+    .main{
+        .producto{
+            .centrado{
+                width: 100%;
+                background-color: blue;
+                .columna{
+                    width: calc(100% / 2 );
+                }
+            }
+        }
+    }
+    
+
 }
+
 
 @media screen and (max-width:760px){
     .main .producto .centrado{
