@@ -2,14 +2,14 @@
  Réplica de la web de Stockholm como práctica para el curso en <a href="https://www.bejob.com" title="Bejob" target="_blank">Bejob</a>.
  
  ## Realizado con 🛠️
- * -[HTML]
- * -[Scss]
- * -[TypeScript]
+ * [HTML]
+ * [Scss]
+ * [TypeScript]
 
 
 ## Programa utilizado ⚙️
-  * - Visua Studio Code
-  * - Prepros
+   - Visua Studio Code
+   - Prepros
 
 ## Tiempo de programación estimado ⌛
   8 horas
